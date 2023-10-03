@@ -175,17 +175,17 @@
                 <div class="verify">
                   <div class="row mx-0">
                     <div class="col-lg-4">
-                      <div class="verifybox">
+                      <div class="verifybox clickable-div">
                         <h6><i class="uil uil-check"></i> Verified identity</h6>
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="verifybox">
+                      <div class="verifybox clickable-div">
                         <h6><i class="uil uil-check"></i> Verified identity</h6>
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="verifybox">
+                      <div class="verifybox clickable-div">
                         <h6><i class="uil uil-check"></i> Verified identity</h6>
                       </div>
                     </div>
@@ -713,6 +713,13 @@
       window.addEventListener("scroll", () => {
         var header = document.querySelector(".navbar");
         header.classList.toggle("sticky", window.scrollY > 0);
+      });
+      const clickableDivs = document.querySelectorAll(".clickable-div");
+
+      clickableDivs.forEach((div) => {
+        div.addEventListener("click", () => {
+          div.classList.toggle("clicked");
+        });
       });
     </script>
   </body>

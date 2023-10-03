@@ -1,9 +1,29 @@
 @media screen and (max-width: 1500px) {
+  .section-4 {
+    & .box2 button {
+      left: 30%;
+      top: 15%;
+      transform: translateY(-10rem);
+    }
+    & .box1:hover .box2 button {
+      transform: translateY(1rem);
+    }
+  }
 }
 @media screen and (max-width: 1200px) {
   .section-2 {
     & .mainrow {
       padding: 0 2rem;
+    }
+  }
+  .section-4 {
+    & .box2 button {
+      left: 20%;
+      top: 15%;
+      transform: translateY(-10rem);
+    }
+    & .box1:hover .box2 button {
+      transform: translateY(-0.5rem);
     }
   }
   .section-1 {
@@ -19,6 +39,16 @@
 }
 
 @media screen and (max-width: 992px) {
+  .section-4 {
+    & .box2 button {
+      left: 30%;
+      top: 15%;
+      transform: translateY(-10rem);
+    }
+    & .box1:hover .box2 button {
+      transform: translateY(2rem);
+    }
+  }
   .section-2 {
     & .mainrow {
       padding: 0 3rem;
@@ -68,6 +98,16 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .section-4 {
+    & .box2 button {
+      left: 25%;
+      top: 15%;
+      transform: translateY(-10rem);
+    }
+    & .box1:hover .box2 button {
+      transform: translateY(-0.2rem);
+    }
+  }
   .section-3 {
     & .col-md-8 {
       text-align: center;
@@ -87,6 +127,16 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .section-4 {
+    & .box2 button {
+      left: 38%;
+      top: 15%;
+      transform: translateY(-10rem);
+    }
+    & .box1:hover .box2 button {
+      transform: translateY(4rem);
+    }
+  }
   .section-1 {
     & .col-lg-6 {
       img {
@@ -97,7 +147,7 @@
   .verify {
     & .verifybox {
       & h6 {
-        font-size: 0.8rem !important;
+        font-size: 1.1rem !important;
       }
     }
   }
@@ -114,6 +164,9 @@
     }
   }
   .section-2 {
+    & button {
+      margin-bottom: 2rem !important;
+    }
     & .mainrow {
       padding: 0 0.5rem;
     }
@@ -137,6 +190,16 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .section-4 {
+    & .box2 button {
+      left: 33%;
+      top: 15%;
+      transform: translateY(-10rem);
+    }
+    & .box1:hover .box2 button {
+      transform: translateY(1.5rem);
+    }
+  }
   .navbar {
     img {
       height: 2.2rem !important;
