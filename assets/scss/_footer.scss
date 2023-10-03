@@ -1,0 +1,93 @@
+@import "variable";
+
+.footer {
+  margin-top: 4rem;
+  background-color: #28212d;
+  & .mainfooter {
+    padding: 0 8rem;
+  }
+  text-align: center;
+  & .col-md-1 {
+    margin-top: 3rem;
+
+    & img {
+      height: 3.2rem;
+    }
+  }
+  & .col-md-3 {
+    margin-top: 3rem;
+    & button {
+      background-color: $lighterpink;
+      padding: 0.7rem 1.5rem;
+      border-radius: 10rem;
+      border: none;
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      color: $white;
+      margin: 0 auto;
+    }
+    & button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: $whitesmoke;
+      border-radius: 10rem;
+      padding: 0.7rem 1.5rem;
+
+      transform: translateX(-100%);
+      height: 100%;
+      transition: all linear 0.3s;
+    }
+    & button:hover::before {
+      transform: translateX(0);
+      z-index: -1;
+    }
+    & button:hover {
+      border: $lighterpink solid 0.3px;
+      color: $lighterpink;
+    }
+    .footerleft {
+      text-align: center;
+    }
+  }
+  & .col-md-8 {
+    margin-top: 3rem;
+
+    & ul {
+      display: flex;
+      margin: 0 auto;
+
+      width: fit-content;
+      align-items: center;
+      gap: 2rem;
+      flex-direction: row;
+    }
+    & a {
+      color: $white;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  }
+  & hr {
+    color: $gray;
+  }
+}
+.footerlast {
+  padding-bottom: 1.5rem;
+  & .col-sm-6 {
+    text-align: center;
+    & h6 {
+      color: $gray;
+    }
+    & a {
+      font-size: 0.9rem;
+      margin-left: 4rem;
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "variable";
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-size: 14px;
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: $whitesmoke;
+  height: 0.4rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $background;
+}
